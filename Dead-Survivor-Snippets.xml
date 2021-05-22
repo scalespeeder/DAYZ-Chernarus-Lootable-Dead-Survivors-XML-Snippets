@@ -1,0 +1,99 @@
+<!-- XML Snippets to add NPC spawns as a replacement at some Police Car events, to simulate Dead Players -->
+
+<!-- Add snippets in appropriate files, save or upload, then restart your server -->
+
+<!-- Paste the below code over the top over the exisiting StaticPoliceCar entry in your events.xml file -->
+
+<event name="StaticPoliceCar">
+        <nominal>20</nominal>
+        <min>0</min>
+        <max>0</max>
+        <lifetime>2500</lifetime>
+        <restock>0</restock>
+        <saferadius>500</saferadius>
+        <distanceradius>500</distanceradius>
+        <cleanupradius>200</cleanupradius>
+        <secondary>InfectedPolice</secondary>
+        <flags deletable="1" init_random="0" remove_damaged="0"/>
+        <position>fixed</position>
+        <limit>child</limit>
+        <active>1</active>
+        <children>
+             <child lootmax="5" lootmin="3" max="12" min="4" type="Land_Wreck_hb01_aban1_police"/>
+            <child lootmax="5" lootmin="3" max="12" min="4" type="Land_Wreck_hb01_aban2_police"/>
+            <child lootmax="0" lootmin="0" max="12" min="4" type="SurvivorF_Eva"/>
+        </children>
+    </event>
+
+<!-- paste below over the equivelant values in cfgeconomycore.xml to increase the number of zombies that spawn at Police Cars (and heli crashes) -->
+
+<default name="dyn_dmin" value="4" />
+<default name="dyn_dmax" value="4" />
+
+<!-- NPC to be added to top of cfgspawnabletypes.xml below <damage min="0.3" max="0.7" -->
+
+<type name="SurvivorF_Eva">
+		<attachments>
+		<item name="Ushanka_Green" />
+	</attachments>
+	<attachments>
+		<item name="HuntingJacket_Summer" />
+	</attachments>
+	<attachments>
+		<item name="HunterPants_Autumn" />
+	</attachments>	
+	<attachments>
+		<item name="HikingBoots_Brown" />
+	</attachments>	
+	<attachments>
+		<item name="HighCapacityVest_Black" />
+	</attachments>
+	<attachments>
+		<item name="TaloonBag_Green" />
+	</attachments>
+	<attachments>
+		<item name="LeatherGloves_Beige" />
+	</attachments>	
+	<attachments>
+		<item name="Saiga" />
+	</attachments>
+	<attachments chance="1.00">
+		<item name="Mag_Saiga_Drum20Rnd" chance="1.00" />
+	</attachments>
+	<attachments chance="1.00">
+		<item name="Mag_Saiga_Drum20Rnd" chance="1.00" />
+	</attachments>
+	<attachments chance="1.00">
+		<item name="WoodAxe" chance="1.00" />
+	</attachments>
+	<attachments chance="1.00">
+		<item name="KukriKnife" chance="1.00" />
+	</attachments>
+	<attachments>
+		<item name="CanOpener" />
+	</attachments>
+	<attachments>
+		<item name="BakedBeansCan" />
+	</attachments>
+	<attachments>
+		<item name="PeachesCan" />
+	</attachments>
+	<attachments>
+		<item name="SodaCan_Pipsi" />
+	</attachments>
+	<attachments>
+		<item name="PetrolLighter" />
+	</attachments>
+	<attachments>
+		<item name="ChernarusMap" />
+	</attachments>
+	<attachments>
+		<item name="BandageDressing" />
+	</attachments>
+	<attachments>
+		<item name="TetracyclineAntibiotics" />
+	</attachments>	
+	<attachments>
+		<item name="AmmoBox_00buck_10rnd" />
+	</attachments>	
+</type>	
