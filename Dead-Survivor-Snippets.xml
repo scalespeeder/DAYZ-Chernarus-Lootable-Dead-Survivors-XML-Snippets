@@ -4,8 +4,8 @@
 
 <!-- Paste the below code over the top over the exisiting StaticPoliceCar entry in your events.xml file -->
 
-<event name="StaticPoliceCar">
-        <nominal>20</nominal>
+ <event name="StaticPoliceCar">
+        <nominal>10</nominal>
         <min>0</min>
         <max>0</max>
         <lifetime>2500</lifetime>
@@ -19,9 +19,9 @@
         <limit>child</limit>
         <active>1</active>
         <children>
-             <child lootmax="5" lootmin="3" max="12" min="4" type="Land_Wreck_hb01_aban1_police"/>
-            <child lootmax="5" lootmin="3" max="12" min="4" type="Land_Wreck_hb01_aban2_police"/>
-            <child lootmax="0" lootmin="0" max="12" min="4" type="SurvivorF_Eva"/>
+            <child lootmax="5" lootmin="3" max="6" min="2" type="Land_Wreck_hb01_aban1_police"/>
+            <child lootmax="5" lootmin="3" max="6" min="2" type="Land_Wreck_hb01_aban2_police"/>
+            <child lootmax="0" lootmin="0" max="6" min="2" type="SurvivorF_Eva"/>
         </children>
     </event>
 
@@ -45,12 +45,6 @@
 	<attachments>
 		<item name="HikingBoots_Brown" />
 	</attachments>	
-	<attachments>
-		<item name="HighCapacityVest_Black" />
-	</attachments>
-	<attachments>
-		<item name="TaloonBag_Green" />
-	</attachments>
 	<attachments>
 		<item name="LeatherGloves_Beige" />
 	</attachments>	
